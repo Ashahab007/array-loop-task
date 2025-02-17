@@ -72,15 +72,10 @@ const statements = "I am a hard working person";
 const statementsToArr = statements.split(" ");
 console.log(statementsToArr);
 
-let reversed = [];
 let reverseSent = "";
-for (const statement of statementsToArr) {
-  reversed.unshift(statement);
-}
-// console.log(reversed);
 
-for (const element of reversed) {
-  reverseSent = reverseSent + element + " ";
+for (const statement of statementsToArr) {
+  reverseSent = statement + " " + reverseSent;
 }
 
 console.log(reverseSent);
